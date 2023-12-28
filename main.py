@@ -29,6 +29,7 @@ def buscar(link):
         grid_row += 1
     botonDescargar = Button(etiquetaOpciones, text="Descargar", fg="White", bg="Grey", font="Calibri 13", command=lambda:descargar(opciones_var.get(), link))
     botonDescargar.grid(column=0, row=grid_row, ipady=5)
+    ventana.title(f"Download --> {YouTube(link).title}")
 
 
 # Declaración ventana
